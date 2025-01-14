@@ -104,8 +104,8 @@ jobs:
       - name: Upload ImmortalWrt as release assets
         uses: softprops/action-gh-release@v2.2.1
         with:
-          tag_name: Autobuild-GL-iNet
-          name: ImmortalWrt-GL-iNet
+          tag_name: Autobuild-glinet_gl-mt6000
+          name: ImmortalWrt-glinet_gl-mt6000
           body_path: ${{ github.workspace }}/glinet_mt6000/info.md
           files: |
             ${{ github.workspace }}/*.bin

@@ -40,7 +40,7 @@ jobs:
             docker run --rm -i \
               --user root \
               -v "${{ github.workspace }}/bin:/home/build/immortalwrt/bin" \
-              -v "${{ github.workspace }}/files:/home/build/immortalwrt/files" \
+              -v "${{ github.workspace }}/common_files:/home/build/immortalwrt/files" \
               -v "${{ github.workspace }}/lenovo_newifi-y1s/build.sh:/home/build/immortalwrt/build.sh" \
               -e PROFILE=$profile \
               immortalwrt/imagebuilder:ramips-mt7620-openwrt-23.05.4 /bin/bash /home/build/immortalwrt/build.sh

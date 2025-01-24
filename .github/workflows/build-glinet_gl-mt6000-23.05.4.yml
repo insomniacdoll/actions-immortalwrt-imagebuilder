@@ -1,4 +1,4 @@
-name: build-glinet_gl-mt6000-23.05.4 ImmortalWrt
+name: build-glinet_gl-mt6000-23.05 ImmortalWrt
 
 on:
   workflow_dispatch:
@@ -59,11 +59,11 @@ jobs:
             fi
           fi
 
-      - name: Build Gl-iNet ImmortalWrt 23.05.4
+      - name: Build Gl-iNet ImmortalWrt 23.05
         run: |
           profiles="${{ github.event.inputs.profile }}"
           include_docker="${{ github.event.inputs.include_docker }}"
-          tag="mediatek-filogic-openwrt-23.05.4"
+          tag="mediatek-filogic-openwrt-23.05"
           echo "platform=mediatek/filogic" >> $GITHUB_ENV
           
           IFS=',' read -r -a profile_array <<< "$profiles"

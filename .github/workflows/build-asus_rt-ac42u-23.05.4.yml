@@ -10,6 +10,8 @@ on:
         options:
           - asus_rt-ac42u
         default: asus_rt-ac42u
+  schedule:
+    - cron: 0 0 * * 5
 
 jobs:
   build:

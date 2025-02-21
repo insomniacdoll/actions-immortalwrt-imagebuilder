@@ -33,6 +33,8 @@ on:
       pppoe_password:
         description: "宽带密码 (若启用PPPoE)"
         required: false
+  schedule:
+    - cron: 0 0 * * 5
 
 
 jobs:

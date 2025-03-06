@@ -6,7 +6,7 @@ on:
       profile:
         type: choice
         description: "请选择路由器型号"
-        required: true
+        required: false
         options:
           - lenovo_newifi-y1s
         default: lenovo_newifi-y1s

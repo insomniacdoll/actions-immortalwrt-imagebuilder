@@ -6,14 +6,14 @@ on:
       profile:
         type: choice
         description: "请选择路由器型号"
-        required: true
+        required: false
         options:
           - glinet_gl-mt6000
         default: glinet_gl-mt6000
       include_docker:
         description: |
           是否编译 Docker 插件
-        required: true
+        required: false
         default: 'no'
         type: choice
         options:
@@ -21,7 +21,7 @@ on:
           - 'no'
       enable_pppoe:
         description: "是否配置PPPoE拨号信息?"
-        required: true
+        required: false
         default: 'no'
         type: choice
         options:
